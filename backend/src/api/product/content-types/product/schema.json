@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "product"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "proImg": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    },
+    "proTitle": {
+      "type": "string",
+      "required": true
+    },
+    "proNum": {
+      "type": "decimal",
+      "required": true
+    },
+    "proDes": {
+      "type": "text",
+      "required": true
+    },
+    "proRating": {
+      "required": true,
+      "type": "decimal"
+    },
+    "proCat": {
+      "type": "enumeration",
+      "enum": [
+        "men",
+        "women"
+      ]
+    }
+  }
+}
